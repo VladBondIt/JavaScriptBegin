@@ -1,4 +1,4 @@
-// 1 переменные
+// 1 ПЕРЕМЕННЫЕ
 
 // Вариабл может менятся,стараться не использовтаь
 // var name = 'Vladimir' // Строки
@@ -12,14 +12,13 @@
 // age = 'string'
 // name = 'Vl'
 // camelCase
-// Точки с запятой не нужны!!!=)
 
 // const _private = 'private'
 
 // Ошибка
 // const 5lool = '5'
 
-//  2 Мутирование
+//  2 МУТИРОВАНИЕ
 
 // + concatenation                         + new string       + число js приводит тип данных автоматически к строке
 // console.log('Person name: ' + firstName + ', person age: ' + age)
@@ -29,7 +28,7 @@
 // const firstName = prompt('Insert first name')
 // alert(firstName + ' ' + lastName)
 
-// 3 Операторы
+// 3 ОПЕРАТОРЫ
 
 // let currentYear = 2020
 // const birthYear = 1988
@@ -55,14 +54,17 @@
 // Сокращение, подобное сокращение характерно для всех мат. операций
 // c += a
 
-// 4 Типы данных
+// 4 ТИПЫ ДАННЫХ
 
-// Примитивы
 // const isProger = true // булевые значения
 // const name = 'Vladimir' // строки
 // const age = 32 // числа
 // let x // undefind не определен
-// null  
+// null
+// Symbol
+// Object
+// bigInt
+
 
 // console.log(typeof isProger)
 // console.log(typeof name)
@@ -72,7 +74,7 @@
 // console.log(typeof null)
 // console.log(null)
 
-// 5 Приоритет операторов
+// 5 ПРИОРИТЕТ ОПЕРАТОРОВ
 
 // const fullAge = 31
 // const birthYear = 1988
@@ -84,7 +86,7 @@
 
 // console.log(isFullAge)
 
-// 6 условные апператоры
+// 6 УСЛОВНЫЕ ОПЕРАТОРЫ
 
 // const courseStatus = 'fail' // эта переменная может принимать в себя различные значения ready pending fail
 
@@ -114,11 +116,11 @@
 // рекомендуется использовать 3 знака равенства для приведение к одному типу данных
 // console.log(num1 === num2)
 
-// 7 Булевая логика
+// 7 БУЛЕВАЯ ЛОГИКА
 // Mdn Логические операторы 
 // && и  , || или , !(не)
 
-// 8 Функции
+// 8 ФУНКЦИИ
 
 // function calcAge(year) {
 //     return 2020 - year
@@ -140,7 +142,8 @@
 // infoPerson('Mihail', 2023)
 // infoPerson('Olga', 1994)
 
-// 9 Массивы
+// 9 МАССИВЫ
+
 // Отсчет начинается с нуля
 // const cars = ['Mazda', 'BMW', 'Ford', 'Honda']
 // Не нужно такое писать ↓↓
@@ -155,8 +158,9 @@
 // cars[cars.length] = 'Reno'
 // console.log(cars)
 
-// 10 Циклы
-// Перебор масивов
+// 10 ЦИКЛЫ
+
+// Перебор массивов
 // const cars = ['Mazda', 'BMW', 'Ford']
 // важно чтобы была переменная let что бы могла меняться,
 // начинаем с нулевого индекса ; дальше говорим до кого момента 
@@ -171,7 +175,7 @@
 //     console.log(car)
 // }
 
-// 11 Объекты
+// 11 ОБЪЕКТЫ
 // Группировка с разными структурами
 
 // const person = {
