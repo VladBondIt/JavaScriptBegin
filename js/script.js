@@ -12,6 +12,9 @@ const person = {
     // }
     greet() {
         console.log('Greet from person')
+    },
+    info() {
+        console.log('Person information: ', this.name)
     }
 }
 
@@ -44,14 +47,30 @@ const person = {
 // и из за этого могут возникать определенные проблемы
 // чтобы этого избежать нужно вписать проверку
 // for (let key in person) {
-    // если объект person имеет свое собстветнное свойство 
-    // не находящееся в прототипе: key, тогда он может считаться безопасным
+// если объект person имеет свое собстветнное свойство 
+// не находящееся в прототипе: key, тогда он может считаться безопасным
 //     if (person.hasOwnProterty(key)) {
 //         console.log('key: ', key)
 //         console.log('value: ', person[key])
 //     }
 // }
-// Есть современые способы делать итерацию по ключам и по объекту исползуя не цикл
+// Есть современые способы делать итерацию по ключам и по объекту исползуя не цикл,
+// а глобальный объект object. на интересует ключи keys
+// Метод массива forEach
+// Object.keys(person).forEach((key) => (
+//     console.log('key: ', key),
+//     console.log('value: ', person[key])
+// ))
+// Контекст this
 
+// person.info()
+
+const logger = {
+    keys() {
+        console.log('Object Keys: ', Object.keys(this))
+    }
+}
+// bind берет и привязывает опеределенный контекст
+const bound = logger.keys.bind(logger)
 
 
