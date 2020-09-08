@@ -68,9 +68,17 @@ const person = {
 const logger = {
     keys() {
         console.log('Object Keys: ', Object.keys(this))
+    },
+    keysAndValues() {
+        Object.keys(this).forEach(key => {
+            console.log(`"${key}" : ${this[key]}`)
+        })
+
     }
 }
 // bind берет и привязывает опеределенный контекст
-const bound = logger.keys.bind(logger)
+// const bound = logger.keys.bind(logger)
+// bound()
+logger.keysAndValues.call(person)
 
 
