@@ -1,9 +1,7 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
-}
-h1,
-h2 {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
