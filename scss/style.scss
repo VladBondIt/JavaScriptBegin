@@ -1,9 +1,20 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-h1,
-h2 {
-    margin-bottom: 20px;
+
+.heart {
+    position: fixed;
+    top: -5vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
 }

@@ -90,10 +90,37 @@ h6 {
 
 /*--------------------*/
 body {
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-h1,
-h2 {
-  margin-bottom: 20px;
+.heart {
+  position: fixed;
+  top: -5vh;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: fall 3s linear forwards;
+          animation: fall 3s linear forwards;
+}
+
+@-webkit-keyframes fall {
+  to {
+    -webkit-transform: translateY(105vh);
+            transform: translateY(105vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    -webkit-transform: translateY(105vh);
+            transform: translateY(105vh);
+  }
 }
