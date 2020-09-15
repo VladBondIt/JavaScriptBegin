@@ -90,5 +90,108 @@ h6 {
 
 /*--------------------*/
 body {
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  font-size: 2rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+button:active {
+  -webkit-transform: translate(1px, 2px);
+      -ms-transform: translate(1px, 2px);
+          transform: translate(1px, 2px);
+}
+
+button:first-child {
+  padding: 0.5rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.popup-container {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  background-color: #fff;
+  height: 400px;
+  opacity: 0;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-100%, 0) perspective(600px) rotateY(-45deg);
+          transform: translate(-100%, 0) perspective(600px) rotateY(-45deg);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.popup.active-p {
+  opacity: 1;
+  -webkit-transform: translateY(0) perspective(0px) rotateY(0deg);
+          transform: translateY(0) perspective(0px) rotateY(0deg);
+}
+
+#close {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40px;
+          flex: 0 1 40px;
+  width: 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }

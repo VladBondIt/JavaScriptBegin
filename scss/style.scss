@@ -1,5 +1,76 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: rebeccapurple;
+    color: white;
+    &:active {
+        transform: translate(1px, 2px);
+    }
+    &:first-child {
+        padding: 0.5rem;
+    }
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.popup-container {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.popup {
+    background-color: #fff;
+    height: 400px;
+    opacity: 0;
+    width: 500px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // transform: translate(0, -100%) perspective(600px) rotateX(45deg);
+    transform: translate(-100%, 0) perspective(600px) rotateY(-45deg);
+    transition: all 1s;
+    &.active-p {
+        opacity: 1;
+        transform: translateY(0) perspective(0px) rotateY(0deg);
+    }
+}
+
+#close {
+    flex: 0 1 40px;
+    width: 40px;
+    align-self: flex-end;
 }
