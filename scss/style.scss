@@ -1,9 +1,10 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
-}
-h1,
-h2 {
-    margin-bottom: 20px;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
