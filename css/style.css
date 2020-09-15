@@ -90,10 +90,47 @@ h6 {
 
 /*--------------------*/
 body {
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-h1,
-h2 {
-  margin-bottom: 20px;
+button {
+  background-color: rebeccapurple;
+  border: 1px solid #000;
+  border-radius: 7px;
+  color: white;
+  -webkit-box-shadow: inset 0 0 18px silver;
+          box-shadow: inset 0 0 18px silver;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 1rem;
+}
+
+button:active {
+  -webkit-transform: translate(1px, 2px);
+      -ms-transform: translate(1px, 2px);
+          transform: translate(1px, 2px);
+}
+
+#container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.toast {
+  background: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem;
 }

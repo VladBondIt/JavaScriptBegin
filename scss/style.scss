@@ -1,9 +1,33 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
-h1,
-h2 {
-    margin-bottom: 20px;
+
+button {
+    background-color: rebeccapurple;
+    border: 1px solid #000;
+    border-radius: 7px;
+    color: white;
+    box-shadow: inset 0 0 18px silver;
+    transition: all 0.2s;
+    padding: 1rem;
+    &:active {
+        transform: translate(1px, 2px);
+    }
+}
+#container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.toast {
+    background: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 1rem;
 }
