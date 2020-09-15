@@ -1,9 +1,27 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-h1,
-h2 {
-    margin-bottom: 20px;
+
+.corusel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.294);
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
