@@ -1,9 +1,43 @@
 @import "_nullstyle.scss";
 
 body {
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    transition: background 0.3s linear, color 0.3s linear;
+    &.dark {
+        background-color: rgb(22, 20, 20);
+        color: white;
+        & label {
+            background-color: #fff;
+        }
+    }
 }
-h1,
-h2 {
-    margin-bottom: 20px;
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+label {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+input {
+    visibility: hidden;
 }
